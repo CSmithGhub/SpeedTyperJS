@@ -1,0 +1,212 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:2;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: grey;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: grey;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* My Styling */
+* {
+    text-align: center;
+    font-family: arial;
+    
+}
+/* Style background */
+.body {
+    background-color: #d3d3d3;
+}
+
+.heading {
+    font-size: 60px;
+    background-color:  darkgrey;
+}
+/* Initialisation sentence */
+.word-instructions p {
+    font-size: 20px;
+    padding-top: 15px;
+}
+/* Time constraints */
+.word-instructions p span {
+    color: #4c4;
+    font-weight: bold;
+}
+/* Word to type */
+.word {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100%;
+    padding-bottom: 1%;
+}
+/* Input box */
+.form {
+    width: 30%; 
+    height: 30px;
+    font-size: 25px;
+}
+/* Alert messages */
+.display-message {
+    height: 40px;
+    font-size: 25px;
+}
+/* Time and Score Values */
+.time-score h3 {
+    line-height: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+/* Instructions */
+.instruct {
+    background-color: darkgrey;
+    margin: 1% 25% 5% 25%;
+    padding: 5px 0px 25px 0px;
+    line-height: 100%;
+    border-radius: 25px;
+}
+
+.instruct h5 {
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+.instruct p {
+    line-height: 110%;
+}
+/* Difficulty Buttons */
+.difficulty {
+    display: flex;
+    justify-content: center;
+    margin-top: -3%;
+}
+
+.difficulty input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.difficulty label {
+    font-weight: bold;
+    display: inline-block;
+    background-color: darkgrey;
+    border: 2px solid #444;
+    border-radius: 4px;
+    width: 85%;
+}
+
+.difficulty ul {
+    list-style: none;
+    display: block;
+}
+
+.difficulty ul li {
+    float: left;
+    display: block;
+    width: 85px;
+    text-align: center;
+}
+
+.difficulty input[type="radio"]:checked + label {
+    background-color: #bfb;
+    border-color: #4c4;
+}
+
+.difficulty label:hover {
+    background-color: #dfd;
+}

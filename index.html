@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SpeedTyper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+  <header class="heading">
+    <h1>SpeedTyper</h1>
+  </header>
+  <div class="container text-center">
+
+    <!-- Word & Input -->
+    <div class="row">
+      <div class="word-instructions">
+        <p class="lead">Type the following word within
+          <span class="text-success" id="seconds">5</span> seconds:</p>
+        <h2 class="word" id="current-word">Awaiting Word...</h2>
+        <input type="text" class="form" placeholder="Start typing..." id="word-input" autofocus>
+        <div class = "display-message">
+          <h4 class="game-over" id="message">Start Typing!</h4>
+        </div>
+
+        <!-- Time & Score Columns -->
+        <div class="time-score">
+          <div class="time">
+            <h3>Time Left:
+              <span id="time">0</span>
+            </h3>
+          </div>
+          <div class="current-score">
+            <h3>Score:
+              <span id="score">0</span>
+            </h3>
+          </div>
+          <div class="high-score">
+            <h3>High Score:
+              <span id="hiscore">0</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="instruct">
+              <h5>Instructions:</h5>
+              <p>Type each word in the given amount of seconds to score. You will gain +1 score for every letter in the word. To play again, just type the current word, or refresh the page, and your score will reset. Change the number of seconds given by changing the difficulty below.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Difficulty Slider -->
+    <div class="difficulty">
+      <ul>
+        <li>
+          <input type="radio" id="easy" name="diff" value="easy" onclick="difficultSelect('easy')">
+          <label for="easy">Easy</label>
+        </li>
+        <li>
+          <input type="radio" id="medium" name="diff" value="medium" onclick="difficultSelect('medium')" checked>
+          <label for="medium">Medium</label>
+        </li>
+        <li>
+          <input type="radio" id="hard" name="diff" value="hard" onclick="difficultSelect('hard')">
+          <label for="hard">Hard</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
